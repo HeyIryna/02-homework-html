@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Friends logo">
+    </header>
+    <main>
+        <section>
+            <h2>"Friends" Quiz</h2>
+            <form method="POST" action="https://formspree.io/ineklesa@gmail.com">
+                <fieldset>
+                    <legend>Who are you?</legend>
+                    <label>
+                        Name: <input type="text" autofocus required placeholder="Rachel" name="name">
+                    </label>
+                    <label>
+                        Surname: <input type="text" required placeholder="Green" name="surname">
+                    </label>
+                    <br>
+                    <label>
+                        Age: <input type="number" name="age">
+                    </label>
+                    <br>
+                    <label>
+                        Email: <input type="email" required name="email">
+                    </label>
+                    <br>
+                    <label>
+                        Phone: <input type="tel" pattern="[0-9]{10}" placeholder="Digits only" name="phone"
+                        title="Please, match the requested format: 10 digits">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Quiz</legend>
+                    <ol>
+                        <li>
+                            <label>What was Ross' job?</label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question1" value="doctor"> Doctor
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question1" value="paleontologist"> Paleontologist
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question1" value="archaeologist"> Archaeologist
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question1" value="orthodontist"> Orthodontist
+                            </label>
+                        </li>
+                        <li>
+                            <label>Who gave birth to triplets?</label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question2" value="monica"> Monica
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question2" value="rachel"> Rachel
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question2" value="phoebe"> Phoebe
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question2" value="none"> None of the above
+                            </label>
+                        </li>
+                        <li>
+                            <label>What kind of pets did Joey and Chandler have?</label>
+                            <select name="question3">
+                                <option value="chick-duck">Chick and duck</option>
+                                <option value="monkey-parrot">Monkey and Parrot</option>
+                                <option value="frog-turtle">Frog and Turtle</option>
+                                <option value="alligator-adove">Alligator and dove</option>
+                            </select>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Finaly</legend>
+                    <label>Leave us your feedback:</label>
+                    <br>
+                    <textarea name="feedback" rows="5" colons="30" placeholder="Hello..."></textarea>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="agreement"> I agree to the processing of my personal data
+                    </label>
+                </fieldset>
+                <br>
+                <input type="submit" name="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Return to the <a href="index.html">main page</a></p>
+        <p>&reg;Warner Bros. Television</p>
+    </footer>
+</body>
+</html>
